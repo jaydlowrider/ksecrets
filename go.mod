@@ -12,18 +12,19 @@ require (
 	github.com/google/go-cmp v0.4.0 // indirect
 	github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6 // indirect
 	github.com/jstemmer/go-junit-report v0.9.1 // indirect
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	go.opencensus.io v0.22.2 // indirect
 	golang.org/x/exp v0.0.0-20191227195350-da58074b4299 // indirect
 	golang.org/x/net v0.0.0-20200114155413-6afb5195e5aa // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d // indirect
-	golang.org/x/sys v0.0.0-20190922100055-0a153f010e69
+	golang.org/x/sys v0.0.0-20191002063906-3421d5a6bb1c
 	golang.org/x/tools v0.0.0-20200117161641-43d50277825c // indirect
 	google.golang.org/api v0.15.0 // indirect
 	google.golang.org/appengine v1.6.5 // indirect
 	google.golang.org/genproto v0.0.0-20200128133413-58ce757ed39b
 	google.golang.org/grpc v1.26.0 // indirect
-	sigs.k8s.io/kustomize/api v0.3.2
-	sigs.k8s.io/kustomize/kustomize/v3 v3.5.4 // indirect
-	sigs.k8s.io/yaml v1.1.0
+	sigs.k8s.io/kustomize/api v0.6.2
+	sigs.k8s.io/kustomize/cmd/kubectl v0.0.3 // indirect
+	sigs.k8s.io/kustomize/kustomize/v3 v3.8.4 // indirect
+	sigs.k8s.io/yaml v1.2.0
 )

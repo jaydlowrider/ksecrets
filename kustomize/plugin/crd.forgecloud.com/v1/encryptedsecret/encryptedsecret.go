@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"cloud.google.com/go/secretmanager/apiv1beta1"
+	secretmanager "cloud.google.com/go/secretmanager/apiv1beta1"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	awssecretsmanager "github.com/aws/aws-sdk-go/service/secretsmanager"
@@ -140,11 +140,11 @@ func (p *plugin) makeResMap(secrets map[string]string) (resmap.ResMap, error) {
 	for key, value := range secrets {
 		args.LiteralSources = append(args.LiteralSources, key+"="+value)
 	}
-	options := &types.GeneratorOptions{
-		DisableNameSuffixHash: p.DisableNameSuffixHash,
-	}
+	//options := &types.GeneratorOptions{
+	//	DisableNameSuffixHash: p.DisableNameSuffixHash,
+	//}
 	return p.helpers.ResmapFactory().FromSecretArgs(
-		kv.NewLoader(p.helpers.Loader(), p.helpers.Validator()), options, args)
+		kv.NewLoader(p.helpers.Loader(), p.helpers.Validator()), args)
 }
 
 func sanitizeKeyName(name string) string {
